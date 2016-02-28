@@ -1,0 +1,31 @@
+extends layout
+
+block content
+  div(class="row", style="margin-top:80px")
+    div(class="col-md-9")
+      div(class="panel panel-default")
+        div(class="panel-heading")
+          h3(class="panel-title")= "Live Installs"
+        div(class="panel-body")
+          div(id="map", style="min-height:450px")
+    div(class="col-md-3")
+      div(class="panel panel-default")
+        div(class="panel-heading")
+          h3(class="panel-title")= "Installs Count"
+        div(class="panel-body")
+          div(style="min-height:150px;display:table;width:100%;text-align:center;")
+            <span id="install-count" style="font-size:7em;display:table-cell;vertical-align:middle;text-align:center;">0</span>
+      div(class="panel panel-default")
+        div(class="panel-heading")
+          h3(class="panel-title")= "Top 5 Devices"
+        div(class="panel-body")
+          div(id="devices", style="min-height:213px")
+
+block addjs
+  script(src="/js/highcharts.js")
+  script(src="/js/highcharts-more.js")
+  script(src="/js/map/map.js")
+  script(src="/js/map/data.js")
+  script(src="/js/map/world.js")
+  script(src="/js/index.js")
+

@@ -1,0 +1,7 @@
+projects/aggregator/project/
+.*/.vagrant/
+.*.log
+.*.iml
+.*/target/
+.*/.idea/
+.*/node_modules/

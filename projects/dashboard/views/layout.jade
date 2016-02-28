@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    title= title
+    link(rel="stylesheet", href="/css/bootstrap.min.css")
+  body
+    div(class="navbar navbar-default navbar-fixed-top")
+      div(class="navbar-header")
+        a(href="/" class="navbar-brand")= title
+      div(class="navbar-collapse collapse")
+        ul(class="nav navbar-nav")
+    div(class="container")
+      block content
+
+  script(src="/js/jquery-1.10.2.min.js")
+  script(src="/js/bootstrap.min.js")
+
+  block addjs
